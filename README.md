@@ -162,12 +162,14 @@ rgb_project/build/main.uf2
 
 ## 💡 LED Circuit Wiring
 
-| Color | GPIO Pin | Resistor | Description |
-|--------|-----------|-----------|-------------|
-| Red | GP6 | 220Ω | Connect through resistor to Red LED leg |
-| Green | GP7 | 220Ω | Connect through resistor to Green LED leg |
-| Blue | GP8 | 220Ω | Connect through resistor to Blue LED leg |
-| GND | Any GND | — | Connect to LED common cathode |
+| LED Pin        | Connect To                       | Notes                         |
+|----------------|----------------------------------|--------------------------------|
+| **Common Cathode** | **GND**                          | Longest leg                    |
+| **R**          | GPIO 11 (through 220 Ω resistor) | Red LED pin                    |
+| **G**          | GPIO 12 (through 220 Ω resistor) | Green LED pin                  |
+| **B**          | GPIO 13 (through 220 Ω resistor) | Blue LED pin                   |
+
+💡 Use 220–330 Ω resistors to protect your GPIO pins.
 
 ---
 

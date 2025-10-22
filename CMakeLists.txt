@@ -6,14 +6,14 @@ project(rgb_project)
 
 pico_sdk_init()
 
-add_executable(main
+add_executable(rgb_project
     main.c
 )
 
-target_link_libraries(main pico_stdlib)
+target_link_libraries(rgb_project pico_stdlib)
 
 # Enable USB serial output (for printf)
-pico_enable_stdio_usb(main 1)
-pico_enable_stdio_uart(main 0)
+pico_enable_stdio_usb(rgb_project 1)
+pico_enable_stdio_uart(rgb_project 0)
 
-pico_add_extra_outputs(main)
+pico_add_extra_outputs(rgb_project)
